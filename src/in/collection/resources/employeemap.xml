@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="in.collection.beans.EmployeeMap" id="empObj">
+        <property name="name" value="Sachin Yadav"/>
+        <property name="job" value="Associate Developer"/>
+        <property name="city" value="Kolkata"/>
+        <property name="productivity">
+            <map>
+                <entry key="Monday" value="8"/>
+                <entry key="Tuesday" value="8"/>
+                <entry key="Wednesday" value="8"/>
+                <entry key="Thursday" value="7"/>
+                <entry key="Friday" value="8"/>
+                <entry key="Saturday" value="0"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="in.viru.beans.CompanyA" id="compObj1" >
+        <property name="comp_name" value="TCS"/>
+        <property name="workers">
+        <array>
+            <bean class="in.viru.beans.Employee">
+                <property name="id" value="101"/>
+                <property name="name" value="Vikash Developer"/>
+            </bean>
+            <bean class="in.viru.beans.Employee">
+                <property name="id" value="103"/>
+                <property name="name" value="Virat Kohli"/>
+            </bean>
+            <bean class="in.viru.beans.Employee">
+                <property name="id" value="105"/>
+                <property name="name" value="Mahesh Pandit"/>
+            </bean>
+        </array>
+        </property>
+    </bean>
+
+
+
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?> <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation=" http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+    <!-- bean definitions here -->
+    <bean class="in.collection.beans.Student3same" id="stObj">
+        <property name="name" value="Vikash Kumar"/>
+        <property name="enrollment" value="0177CS211181"/>
+        <property name="subjects">
+            <util:list id="subjects">
+                <value>Physics</value>
+                <value>Chemistry</value>
+                <value>Math</value>
+            </util:list>
+        </property>
+        <property name="marks" >
+            <util:list id="marks" list-class="java.util.LinkedList">
+                <value>50</value>
+                <value>60</value>
+                <value>70</value>
+            </util:list>
+        </property>
+    </bean>
+</beans>

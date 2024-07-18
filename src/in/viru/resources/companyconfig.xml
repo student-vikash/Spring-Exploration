@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="in.viru.beans.Company" id="compObj1" >
+        <property name="comp_name" value="TCS"/>
+        <property name="salary" value="783343.32"/>
+        <property name="senior_emp">
+            <list>
+                <value>Sachin Yadav</value>
+                <value>Virat Kumar</value>
+                <value>Mahesh Pandit</value>
+                <value>Ramesh Dash</value>
+            </list>
+        </property>
+    </bean>
+
+
+
+</beans>

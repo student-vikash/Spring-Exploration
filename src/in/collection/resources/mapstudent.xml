@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="in.collection.beans.MapStudent" id="stObj">
+        <property name="name" value="Vikash Kumar"/>
+        <property name="enrollment" value="0177CS211181"/>
+        <property name="performance">
+            <map>
+                <entry key="Mathematics" value="98"/>
+                <entry key="Physics" value="92"/>
+                <entry key="Chemistry" value="87"/>
+                <entry key="English" value="88"/>
+            </map>
+        </property>
+
+    </bean>
+
+</beans>
