@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="in.collection.beans.Employee" id="empObj">
+
+        <property name="compName" value="DEV-T"/>
+        <property name="workers">
+            <list>
+                <bean class="in.collection.beans.Employee">
+                    <property name="id" value="101"/>
+                    <property name="name" value="Mayank Yadav"/>
+                </bean>
+                <bean class="in.collection.beans.Employee">
+                    <property name="id" value="102"/>
+                    <property name="name" value="Ramesh Kumar"/>
+                </bean>
+                <bean class="in.collection.beans.Employee">
+                    <property name="id" value="103"/>
+                    <property name="name" value="Praveen Kumar"/>
+                </bean>
+                <bean class="in.collection.beans.Employee">
+                    <property name="id" value="104"/>
+                    <property name="name" value="Nitish Kumar"/>
+                </bean>
+                <bean class="in.collection.beans.Employee">
+                    <property name="id" value="105"/>
+                    <property name="name" value="Atulkar Ansary"/>
+                </bean>
+            </list>
+        </property>
+
+    </bean>
+
+</beans>

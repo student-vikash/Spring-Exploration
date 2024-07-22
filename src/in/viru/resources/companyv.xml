@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+        <bean class="in.viru.beans.CompanyV" id="cmpObj">
+
+            <property name="comName" value="DevT-V"/>
+            <property name="workers">
+                <array>
+                    <bean class="in.viru.beans.EmployeeV">
+                        <property name="id" value="101"/>
+                        <property name="name" value="Sumita Dev"/>
+                    </bean>
+                    <bean class="in.viru.beans.EmployeeV">
+                        <property name="id" value="102"/>
+                        <property name="name" value="Ranjeet Pandit"/>
+                    </bean>
+                    <bean class="in.viru.beans.EmployeeV">
+                        <property name="id" value="103"/>
+                        <property name="name" value="Manish Gupta"/>
+                    </bean>
+                    <bean class="in.viru.beans.EmployeeV">
+                        <property name="id" value="104"/>
+                        <property name="name" value="Ramesh Agarwal"/>
+                    </bean>
+                    <bean class="in.viru.beans.EmployeeV">
+                        <property name="id" value="105"/>
+                        <property name="name" value="Sujeet Yadav"/>
+                    </bean>
+
+                </array>
+            </property>
+        </bean>
+
+</beans>

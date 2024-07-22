@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation=" http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+
+        <bean class="in.collection.beans.Set3" id="stObj">
+            <property name="name" value="Vikash Kumar Rana"/>
+            <property name="enrollment" value="0177CSD211185"/>
+            <property name="emails">
+                <util:set id="emails" set-class="java.util.TreeSet">
+                    <value>vikadh234@gmail.com</value>
+                    <value>sachin1323@gmail.com</value>
+                    <value>manish54@gmail.com</value>
+                    <value>nithin6533@gmail.com</value>
+                </util:set>
+            </property>
+        </bean>
+
+
+
+
+
+</beans>
+
+
+
+
+
+
+

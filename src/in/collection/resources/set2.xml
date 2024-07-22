@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="in.collection.beans.Set2" id="stObj">
+        <property name="name" value="VIRAT Kohli"/>
+        <property name="enrollment" value="0177CS211186"/>
+        <property name="emails">
+            <bean class="org.springframework.beans.factory.config.SetFactoryBean">
+                <property name="targetSetClass">
+                    <value>java.util.TreeSet</value>
+                </property>
+                <property name="sourceSet">
+                    <set>
+                        <value>scalive4u@gmail.com</value>
+                        <value>ksachin92@scalive.com</value>
+                        <value>sac@zoom.in</value>
+                    </set>
+                </property>
+            </bean>
+
+
+        </property>
+    </bean>
+
+</beans>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean class="in.collection.beans.SetStudent" id="stObj">
+       <property name="name" value="Ramesh Kumar"/>
+       <property name="enrollment" value="0177CS2111667"/>
+       <property name="emails">
+           <set>
+               <value>viaksh235vi@gmail.com</value>
+               <value>vikas234vi@gmail.com</value>
+               <value>nithin11222@gmail.com</value>
+               <value>suraj67542@gmail.com</value>
+           </set>
+       </property>
+   </bean>
+
+</beans>

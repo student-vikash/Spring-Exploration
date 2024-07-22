@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="in.cons_in.beans.Player" id="pObj">
+        <constructor-arg index="2" type="int" value="67"/>
+        <constructor-arg index="1" type="String" value="Satish Kumar Raj"/>
+        <constructor-arg index="0" type="double" value="789123.13"/>
+    </bean>
+
+</beans>

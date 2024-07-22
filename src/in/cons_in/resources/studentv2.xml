@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="in.cons_in.beans.StudentV2" id="stObj">
+        <constructor-arg name="roll" value="53" type="int" index="0"/>
+        <constructor-arg name="name" value="Pankaj Rana" type="String" index="1"/>
+        <constructor-arg name="addr" type="in.cons_in.beans.Addressv2" ref="addObj"/>
+    </bean>
+    <bean class="in.cons_in.beans.Addressv2" id="addObj">
+
+        <property name="houseNo" value="12"/>
+        <property name="city" value="Bhopal"/>
+        <property name="locality" value="Sonagiri"/>
+
+    </bean>
+
+</beans>
