@@ -5,6 +5,9 @@ public class Library
     private String libName;
     private double libFee;
 
+    public Library() {
+    }
+
     public String getLibName() {
         return libName;
     }
