@@ -8,5 +8,10 @@ public class Laptop
         return brand;
     }
 
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 
+    public Laptop() {
+    }
 }
