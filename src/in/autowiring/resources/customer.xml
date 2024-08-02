@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+                  <!--           autowire="no"         -->
+
+<!--    <bean class="in.autowiring.beans.Customer" autowire="no" id="cusObj">-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--    </bean>-->
+
+
+<!--      <bean class="in.autowiring.beans.Account" id="acObj" >-->
+<!--          <property name="accId" value="Viru123"/>-->
+<!--          <property name="balance" value="600000.0"/>-->
+<!--      </bean>-->
+
+<!--    -->
+
+<!--                                 autowire = "byName"          -->
+
+
+<!--    <bean class="in.autowiring.beans.Customer" id="cusObj" autowire="byName">-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="in.autowiring.beans.Account" id="acc" >-->
+<!--        <property name="accId" value="Viru123"/>-->
+<!--        <property name="balance" value="600000.0"/>-->
+<!--    </bean>-->
+
+
+
+
+<!--                        autowire = "byType"             -->
+
+
+<!--    <bean class="in.autowiring.beans.Customer" id="cusObj" autowire="byType">-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="in.autowiring.beans.Account" id="accObj" >-->
+<!--        <property name="accId" value="Viru123"/>-->
+<!--        <property name="balance" value="600000.0"/>-->
+<!--    </bean>-->
+
+
+
+
+<!--                    Ambiguity problem with byType  ( of class )        -->
+
+
+
+
+
+<!--    <bean class="in.autowiring.beans.Customer" id="cusObj" autowire="byType">-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="in.autowiring.beans.Account" id="accObj1" >-->
+<!--        <property name="accId" value="Viru123"/>-->
+<!--        <property name="balance" value="600000.0"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="in.autowiring.beans.Account" id="accObj2" >-->
+<!--        <property name="accId" value="Viru123"/>-->
+<!--        <property name="balance" value="600000.0"/>-->
+<!--    </bean>-->
+
+
+<!--                            Solving Ambiguity through ( autowire-candidate="false" )      -->
+
+
+
+<!--    <bean class="in.autowiring.beans.Customer" id="cusObj" autowire="byType">-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="in.autowiring.beans.Account" id="accObj1" autowire-candidate="false" >-->
+<!--        <property name="accId" value="Viru123"/>-->
+<!--        <property name="balance" value="600000.0"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="in.autowiring.beans.Account" id="accObj2" >-->
+<!--        <property name="accId" value="Developer123"/>-->
+<!--        <property name="balance" value="500000.0"/>-->
+<!--    </bean>-->
+
+
+
+<!--                No matter for multiple Class , means they are ready for autowiring      -->
+
+
+
+<!--    <bean class="in.autowiring.beans.Customer" id="cusObj" autowire="byType">-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="in.autowiring.beans.Account" id="accObj1" autowire-candidate="false" >-->
+<!--        <property name="accId" value="Viru123"/>-->
+<!--        <property name="balance" value="600000.0"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="in.autowiring.beans.Account" id="accObj2" >-->
+<!--        <property name="accId" value="Developer123"/>-->
+<!--        <property name="balance" value="500000.0"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="in.autowiring.beans.Account" id="accObj3" >-->
+<!--        <property name="accId" value="Assistance123"/>-->
+<!--        <property name="balance" value="30000.0"/>-->
+<!--    </bean>-->
+
+
+
+<!--                          primary="true"       -->
+
+
+
+
+    <bean class="in.autowiring.beans.Customer" id="cusObj" autowire="byType">
+        <property name="name" value="Developer Vikash"/>
+    </bean>
+
+    <bean class="in.autowiring.beans.Account" id="accObj1" autowire-candidate="false" >
+        <property name="accId" value="Viru123"/>
+        <property name="balance" value="600000.0"/>
+    </bean>
+
+    <bean class="in.autowiring.beans.Account" id="accObj2" >
+        <property name="accId" value="Developer123"/>
+        <property name="balance" value="500000.0"/>
+    </bean>
+
+    <bean class="in.autowiring.beans.Account" id="accObj3" primary="true" >
+        <property name="accId" value="Assistance123"/>
+        <property name="balance" value="30000.0"/>
+    </bean>
+
+</beans>

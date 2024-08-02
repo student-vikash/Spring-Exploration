@@ -3,6 +3,12 @@ package in.cons_in.beans;
 public class College
 {
     private String name;
+    private Student rollno;
+
+    public College(String name, Student rollno) {
+        this.name = name;
+        this.rollno = rollno;
+    }
 
     public String getName() {
         return name;
