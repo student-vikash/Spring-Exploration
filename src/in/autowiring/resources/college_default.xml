@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans default-autowire-candidate="*Service">
+
+    <bean id="myService" class="in.autowiring.beans.College" >
+        <property name="college_Name" value="IES COLLEGE OF TECHNOLOGY BHOPAL"/>
+    </bean>
+
+    <bean id="myStudentService" class="in.autowiring.beans.Student" autowire-candidate="default">
+        <property name="name" value="Developer Viaksh"/>
+        <property name="branch" value="CSE"/>
+        <property name="enrollment" value="0177CS211181"/>
+    </bean>
+</beans>

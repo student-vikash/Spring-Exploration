@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--                            Autowire using " no " mode-->
+
+<!--    <bean id="stObj" class="in.autowiring.beans.Student" >-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--        <property name="branch" value="CSE"/>-->
+<!--        <property name="enrollment" value="0177CS211181"/>-->
+<!--    </bean>-->
+
+
+<!--    <bean id="collegeObj" class="in.autowiring.beans.College"  autowire="no">-->
+<!--        <property name="college_Name" value="IES COLLEGE OF TECHNOLOGY BHOPAL"/>-->
+
+<!--    </bean>-->
+<!--    -->
+
+
+<!--                            Autowire using byName  ( ref )-->
+
+<!--    <bean id="details" class="in.autowiring.beans.Student">-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--        <property name="branch" value="CSE"/>-->
+<!--        <property name="enrollment" value="0177CS211181"/>-->
+<!--    </bean>-->
+
+
+<!--    <bean id="collegeObj" class="in.autowiring.beans.College"   autowire="byName">-->
+<!--        <property name="college_Name" value="IES COLLEGE OF TECHNOLOGY BHOPAL"/>-->
+
+<!--    </bean>-->
+
+<!--    -->
+<!--                    Autowire using byType mode-->
+
+<!--    <bean id="stObj" class="in.autowiring.beans.Student">-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--        <property name="branch" value="CSE"/>-->
+<!--        <property name="enrollment" value="0177CS211181"/>-->
+<!--    </bean>-->
+
+
+<!--    <bean id="collegeObj" class="in.autowiring.beans.College"   autowire="byType">-->
+<!--        <property name="college_Name" value="IES COLLEGE OF TECHNOLOGY BHOPAL"/>-->
+
+<!--    </bean>-->
+
+<!--                NoUniqueBeanException  condition when more than two bean with same Name-->
+
+
+<!--    <bean id="stObj" class="in.autowiring.beans.Student" autowire-candidate="false">-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--        <property name="branch" value="CSE"/>-->
+<!--        <property name="enrollment" value="0177CS211181"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="stObj2" class="in.autowiring.beans.Student">-->
+<!--        <property name="name" value="Developer Viru"/>-->
+<!--        <property name="branch" value="CSE"/>-->
+<!--        <property name="enrollment" value="0177CS211182"/>-->
+<!--    </bean>-->
+
+
+<!--    <bean id="collegeObj" class="in.autowiring.beans.College"   autowire="byType">-->
+<!--        <property name="college_Name" value="IES COLLEGE OF TECHNOLOGY BHOPAL"/>-->
+
+<!--    </bean>-->
+
+
+<!--    <bean id="stObj" class="in.autowiring.beans.Student" autowire-candidate="false">-->
+<!--        <property name="name" value="Developer Vikash"/>-->
+<!--        <property name="branch" value="CSE"/>-->
+<!--        <property name="enrollment" value="0177CS211181"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="stObj2" class="in.autowiring.beans.Student" autowire-candidate="false">-->
+<!--        <property name="name" value="Developer Viru"/>-->
+<!--        <property name="branch" value="CSE"/>-->
+<!--        <property name="enrollment" value="0177CS211182"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="stObj3" class="in.autowiring.beans.Student">-->
+<!--        <property name="name" value="Developer Ramesh"/>-->
+<!--        <property name="branch" value="CSE"/>-->
+<!--        <property name="enrollment" value="0177CS211183"/>-->
+<!--    </bean>-->
+
+
+    <bean id="stObj" class="in.autowiring.beans.Student" >
+        <property name="name" value="Developer Vikash"/>
+        <property name="branch" value="CSE"/>
+        <property name="enrollment" value="0177CS211181"/>
+    </bean>
+
+    <bean id="stObj2" class="in.autowiring.beans.Student" >
+        <property name="name" value="Developer Viru"/>
+        <property name="branch" value="CSE"/>
+        <property name="enrollment" value="0177CS211182"/>
+    </bean>
+
+    <bean id="stObj3" class="in.autowiring.beans.Student" primary="true">
+        <property name="name" value="Developer Ramesh"/>
+        <property name="branch" value="CSE"/>
+        <property name="enrollment" value="0177CS211183"/>
+    </bean>
+
+
+    <bean id="collegeObj" class="in.autowiring.beans.College"   autowire="byType">
+        <property name="college_Name" value="IES COLLEGE OF TECHNOLOGY BHOPAL"/>
+
+    </bean>
+
+
+
+
+
+
+
+</beans>
